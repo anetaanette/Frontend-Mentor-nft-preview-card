@@ -33,8 +33,6 @@ body {
 body > main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 37%;
-  height: 95vh;
   background-color: var(--card-bg);
   border-radius: 1em;
   display: -webkit-box;
@@ -49,35 +47,39 @@ body > main {
           justify-content: center;
   -ms-flex-item-align: center;
       align-self: center;
+  -webkit-box-shadow: 0px 15px 15px 15px #001424;
+          box-shadow: 0px 15px 15px 15px #001424;
 }
 
 body > main > .top {
-  /* display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; */
-  margin: 0 auto;
-  margin-top: 3.7em;
-  border-bottom: 1px solid var(--line);
-  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  width: 300px;
+  padding: 20px;
 }
 
 body > main > .top > img {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 1em;
   margin: 0 auto;
-  margin-top: -3.5em;
 }
 
 body > main > .top > h1 {
   color: white;
   font-weight: 400;
   font-size: 1.2em;
+  width: 300px;
 }
 
 body > main > .top > p {
-  width: 350px;
+  width: 300px;
   margin: 0 auto;
   color: var(--soft-blue);
   font-weight: 300;
@@ -87,7 +89,7 @@ body > main > .top > .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 150px;
+  gap: 120px;
 }
 
 body > main > .top > .flex > h2 {
@@ -101,11 +103,29 @@ body > main > .top > .flex > p {
   font-size: 0.8em;
 }
 
+body > main > .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -30px;
+  padding: 15px;
+}
+
 body > main > .bottom > img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid white;
+  margin: 10px;
+}
+
+body > main > .bottom > p {
+  color: var(--soft-blue);
+  font-size: 0.9em;
+}
+
+body > main > .bottom > p > p {
+  color: white;
 }
 
 body > footer {
@@ -120,5 +140,13 @@ body > footer > .attribution {
 
 body > footer > .attribution a {
   color: #3e52a3;
+}
+
+.top::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 300px;
+  background: var(--line);
 }
 /*# sourceMappingURL=style.css.map */

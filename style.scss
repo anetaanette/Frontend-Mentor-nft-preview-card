@@ -21,45 +21,44 @@ body {
   align-items: center;
   > main {
     box-sizing: border-box;
-    width: 37%;
-    height: 95vh;
+    // width: 350px;
+    // height: 580px;
     background-color: var(--card-bg);
     border-radius: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-self: center;
+    box-shadow: 0px 15px 15px 15px hsl(206, 100%, 7%);
     > .top {
-      /* display: flex;
+      display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center; */
-
-      margin: 0 auto;
-      margin-top: 3.7em;
-      border-bottom: 1px solid var(--line);
-      width: 350px;
+      margin: auto;
+      // margin-top: 80px;
+      width: 300px;
+      padding: 20px;
       > img {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
         border-radius: 1em;
         margin: 0 auto;
-        margin-top: -3.5em;
+        // margin-top: -5.5em;
       }
       > h1 {
         color: white;
         font-weight: 400;
         font-size: 1.2em;
+        width: 300px;
       }
       > p {
-        width: 350px;
+        width: 300px;
         margin: 0 auto;
         color: var(--soft-blue);
         font-weight: 300;
       }
       > .flex {
         display: flex;
-        gap: 150px;
+        gap: 120px;
         > h2 {
           color: var(--cyan);
           font-size: 0.9em;
@@ -72,11 +71,23 @@ body {
       }
     }
     > .bottom {
+      display: flex;
+      margin-top: -30px;
+      padding: 15px;
+      //gap: 1em;
       > img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         border: 1px solid white;
+        margin: 10px;
+      }
+      > p {
+        color: var(--soft-blue);
+        font-size: 0.9em;
+        > p {
+          color: white;
+        }
       }
     }
   }
@@ -92,4 +103,12 @@ body {
       color: hsl(228, 45%, 44%);
     }
   }
+}
+
+.top::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 300px;
+  background: var(--line);
 }
