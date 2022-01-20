@@ -69,9 +69,11 @@ body > main > .top > .container {
 }
 
 body > main > .top > .container > .main-img {
-  width: 300px;
-  height: 300px;
+  position: relative;
+  width: 100%;
+  height: auto;
   border-radius: 1em;
+  overflow: hidden;
   background-color: var(--cyan);
   margin: 0 auto;
   display: block;
@@ -91,13 +93,10 @@ body > main > .top > .container > .overlay {
 }
 
 body > main > .top > .container > .overlay > .eye {
-  height: 30px;
-  width: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   display: block;
-  background-color: rgba(0, 255, 247, 0.4);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -191,10 +190,12 @@ body > footer > .attribution a {
 
 .container:hover .overlay {
   opacity: 1;
-  background-color: var(--cyan);
+  background-color: rgba(0, 255, 247, 0.6);
 }
 
 .container:hover .main-img {
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
   opacity: 0.3;
   cursor: pointer;
 }

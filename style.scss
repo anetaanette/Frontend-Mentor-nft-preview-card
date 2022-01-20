@@ -37,9 +37,11 @@ body {
       > .container {
         position: relative;
         > .main-img {
-          width: 300px;
-          height: 300px;
+          position: relative;
+          width: 100%;
+          height: auto;
           border-radius: 1em;
+          overflow: hidden;
           background-color: var(--cyan);
           margin: 0 auto;
           display: block;
@@ -54,15 +56,15 @@ body {
           width: 100%;
           opacity: 0;
           transition: 0.5s ease;
-          //background-color: hsl(178, 100%, 50%);
+          //background-color: rgba(0, 255, 247, 0.6);
           > .eye {
-            height: 30px;
-            width: 30px;
+            // height: 30px;
+            // width: 30px;
             position: absolute;
             top: 50%;
             left: 50%;
             display: block;
-            background-color: hsla(178, 100%, 50%, 0.4);
+            //background-color: hsla(178, 100%, 50%, 0.4);
             transform: translate(-50%, -50%);
           }
         }
@@ -143,9 +145,10 @@ body {
 }
 .container:hover .overlay {
   opacity: 1;
-  background-color: var(--cyan);
+  background-color: rgba(0, 255, 247, 0.6);
 }
 .container:hover .main-img {
+  transition: opacity 200ms ease-in-out;
   opacity: 0.3;
   cursor: pointer;
 }
