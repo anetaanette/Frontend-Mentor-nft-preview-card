@@ -2,9 +2,9 @@
 
 ### Screenshot
 
-![Desktop](./screenshot-desktop)
+![Desktop](https://github.com/anetaanette/Frontend-Mentor-nft-preview-card/blob/main/images/screenshot-desktop.png)
 
-![Mobile](./screenshot-mobile)
+![Mobile](https://github.com/anetaanette/Frontend-Mentor-nft-preview-card/blob/main/images/screenshot-mobile.png)
 
 ### Links
 
