@@ -72,6 +72,7 @@ body > main > .top > .container > .main-img {
   width: 300px;
   height: 300px;
   border-radius: 1em;
+  background-color: var(--cyan);
   margin: 0 auto;
   display: block;
 }
@@ -87,7 +88,6 @@ body > main > .top > .container > .overlay {
   opacity: 0;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  background-color: var(--cyan);
 }
 
 body > main > .top > .container > .overlay > .eye {
@@ -96,6 +96,8 @@ body > main > .top > .container > .overlay > .eye {
   position: absolute;
   top: 50%;
   left: 50%;
+  display: block;
+  background-color: rgba(0, 255, 247, 0.4);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -172,7 +174,7 @@ body > footer > .attribution a {
   color: #3e52a3;
 }
 
-body .top::after {
+.top::after {
   content: "";
   display: block;
   height: 1px;
@@ -180,14 +182,20 @@ body .top::after {
   background: var(--line);
 }
 
-body .cyan:hover {
+.cyan:hover {
   cursor: pointer;
   color: var(--cyan);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-body .container:hover .overlay {
+.container:hover .overlay {
   opacity: 1;
+  background-color: var(--cyan);
+}
+
+.container:hover .main-img {
+  opacity: 0.3;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
